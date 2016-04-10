@@ -19,6 +19,14 @@ namespace TAK_CameraController
 				Transform trans = this.transform;
 				trans.Rotate (Vector3.up, -1);
 			}
+			if (Input.GetKey(KeyCode.UpArrow)) {
+				Transform trans = this.transform;
+				trans.Rotate (Vector3.left, 1);
+			}
+			if (Input.GetKey(KeyCode.DownArrow)) {
+				Transform trans = this.transform;
+				trans.Rotate (Vector3.left, -1);
+			}
 		}
 	}
 }
